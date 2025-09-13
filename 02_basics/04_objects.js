@@ -40,7 +40,24 @@ const obj3 = {...obj1, ...obj2};
 
 //console.log(Object.entries(obj3)); // convert every key valur pair in seprate array inside a main array.
 
-console.log(obj3.hasOwnProperty('d')); // to check whether this property is present or not
+//console.log(obj3.hasOwnProperty('d')); // to check whether this property is present or not
+
+//destructuring of object
+
+const deobj ={
+    sName:"ankit",
+    sAge:21,
+    sCourse:"fullstack"
+}
+
+//if you have to access the sAge you hav to do
+//console.log(deobj.sAge);
+
+const {sAge} = deobj;
+console.log(sAge); // you can also access like this
+const {sAge:cAge} = deobj;
+console.log(cAge); // you can also give different name to key.
+
 
 
 
